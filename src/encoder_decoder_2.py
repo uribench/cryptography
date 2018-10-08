@@ -14,7 +14,7 @@ def decode(secret, cipher):
     return secret.translate(str.maketrans(''.join(cipher), letters))
 
 def make_cipher(salt):
-    """Create a deranged alphabet cipher using a given rotation value as salt"""
+    """Create a deranged alphabet cipher using a keyword as salt"""
     if not salt.isalpha():
         print('salt must include only letters {}'.format(salt))
         sys.exit(1)
