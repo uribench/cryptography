@@ -6,15 +6,15 @@ import re
 import sys
 
 def encode(message, cipher):
-    """encode a plain text message using a given cipher"""
+    """Encode a plain text message using a given cipher"""
     return message.translate(str.maketrans(letters, ''.join(cipher)))
 
 def decode(secret, cipher):
-    """decode an encoded secret using a given cipher"""
+    """Decode an encoded secret using a given cipher"""
     return secret.translate(str.maketrans(''.join(cipher), letters))
 
 def make_cipher(salt):
-    """create a deranged alphabet cipher using a given rotation value as salt"""
+    """Create a deranged alphabet cipher using a given rotation value as salt"""
     if not salt.isalpha():
         print('salt must include only letters {}'.format(salt))
         sys.exit(1)
@@ -24,8 +24,8 @@ def make_cipher(salt):
     return salt + re.sub(pattern, '', ''.join(list(letters)))
 
 MESSAGE = 'Better Faster Forever'
-CIPHER = make_cipher('QWERTY')
-SECRET = encode(MESSAGE, CIPHER)
-print('secret: {}'.format(SECRET))
+cipher = make_cipher('QWERTY')
+secret = encode(MESSAGE, cipher)
+print('secret: {}'.format(secret))
 # secret: vTnnTl zQmnTl zilTpTl
-print(decode(SECRET, CIPHER))
+print(decode(secret, cipher))
