@@ -4,19 +4,19 @@ from src.encoder_decoder_2 import *
 class encoder_decoder_1(unittest.TestCase):
 
     def testEncodeWithNullString(self):
-        self.assertEqual(encode('', CIPHER), '', 'Null value')
+        self.assertEqual(encode('', cipher), '', 'Null value')
 
     def testEncodeWithCustomMessage(self):
-        self.assertEqual(encode('helloworld', CIPHER), 'bTffiqilfR', 'custom message')
+        self.assertEqual(encode('helloworld', cipher), 'bTffiqilfR', 'custom message')
 
     def testEncodeWithActualMessage(self):
-        self.assertEqual(encode(MESSAGE, CIPHER), 'vTnnTl zQmnTl zilTpTl', 'actual Message')
+        self.assertEqual(encode(MESSAGE, cipher), 'vTnnTl zQmnTl zilTpTl', 'actual Message')
 
     def testDecodeWithCustomMessage(self):
-        self.assertEqual(decode('bTffi Kbcfcjm', CIPHER), 'hello Philips')
+        self.assertEqual(decode('bTffi Kbcfcjm', cipher), 'hello Philips')
 
     def testDecodeWithOriginalMessage(self):
-        self.assertEqual(decode(SECRET,CIPHER), MESSAGE, 'original message')
+        self.assertEqual(decode(secret,cipher), MESSAGE, 'original message')
 
     def testCipherFunctionWithNumericValue(self):
         with self.assertRaises(AttributeError): make_cipher(0)
