@@ -1,7 +1,7 @@
 import unittest
-from caesar_cipher.src.encoder_decoder_1 import *
+from caesar_cipher.src.encoder_decoder import *
 
-class encoder_decoder_1(unittest.TestCase):
+class encoder_decoder(unittest.TestCase):
 
     def testEncryptWithNullString(self):
         self.assertEqual(encode('', cipher), '', 'Null value')

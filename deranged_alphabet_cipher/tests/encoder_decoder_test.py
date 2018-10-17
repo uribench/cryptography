@@ -1,7 +1,7 @@
 import unittest
-from deranged_alphabet_cipher.src.encoder_decoder_2 import *
+from deranged_alphabet_cipher.src.encoder_decoder import *
 
-class encoder_decoder_1(unittest.TestCase):
+class encoder_decoder(unittest.TestCase):
 
     def testEncodeWithNullString(self):
         self.assertEqual(encode('', cipher), '', 'Null value')
