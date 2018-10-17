@@ -1,5 +1,5 @@
 import unittest
-from src.encoder_decoder_1 import *
+from caesar_cipher.src.encoder_decoder_1 import *
 
 class encoder_decoder_1(unittest.TestCase):
 

@@ -1,5 +1,5 @@
 import unittest
-from src.encoder_decoder_2 import *
+from deranged_alphabet_cipher.src.encoder_decoder_2 import *
 
 class encoder_decoder_1(unittest.TestCase):
 
