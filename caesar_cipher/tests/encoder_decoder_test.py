@@ -1,42 +1,29 @@
 import unittest
 from caesar_cipher.src.encoder_decoder import *
 
-class encoder_decoder(unittest.TestCase):
+class EncoderDecoder1(unittest.TestCase):
 
-    def testEncryptWithNullString(self):
-        self.assertEqual(encode('', cipher), '', 'Null value')
+    def test_encode_with_null_string(self):
+        self.assertEqual(encode('', cipher), '', 'Null Value')
 
-    def testEncryptWithCustomMessage(self):
-        self.assertEqual(encode('helloworld', cipher), 'mjqqtBtwqi', 'custom message')
+    def test_encode_with_custom_message(self):
+        self.assertEqual(encode('helloworld', cipher), 'mjqqtBtwqi', 'Custom Message')
 
-    def testEncryptWithActualMessage(self):
-        self.assertEqual(encode(MESSAGE, cipher), 'Hqjfs Htij', 'actual message')
+    def test_encode_with_actual_message(self):
+        self.assertEqual(encode(MESSAGE, cipher), 'Hqjfs Htij', 'Actual Message')
 
-    def testcipherLength(self):
+    def test_cipher_length(self):
         self.assertEqual(52, len(cipher), 'Length mismatch')
 
-    def testDecodeWithCustomMessage(self):
-        self.assertEqual(decode('mjqqtBtwqi', cipher), 'helloworld', 'custom message')
+    def test_decode_with_custom_message(self):
+        self.assertEqual(decode('mjqqtBtwqi', cipher), 'helloworld', 'Custom Message Decode')
 
-    def testDecodeWithOriginalMessage(self):
-        self.assertEqual(decode(secret, cipher), MESSAGE, 'original message')
+    def test_decode_with_original_message(self):
+        self.assertEqual(decode(secret, cipher), MESSAGE, 'Original Message Decode')
 
-    def testDecodeWithKeyEqualZero(self):
+    def test_decode_with_salt_equal_zero(self):
         result = make_cipher(0)
         self.assertEqual(decode('abc', result), 'abc')
 
-    def testWithCipher(self):
-        result = make_cipher(5)
-        self.assertEqual(result[0], 'f')
-
-    def testWithCipherValueChange(self):
-        result = make_cipher(13)
-        self.assertEqual(result[0], 'n')
-
-    def testForMessageValue(self):
-        MESSAGE = 'Clean Code'
-        b = 'Clean Code'
-        self.assertEqual(MESSAGE, b, 'comparison')
-
 if __name__ == '__main__':
-    unittest.main()
+    unittest.main(warnings='ignore')
