@@ -1,36 +1,22 @@
 import unittest
 from deranged_alphabet_cipher.src.encoder_decoder import *
 
-class encoder_decoder(unittest.TestCase):
+class EncoderDecoder(unittest.TestCase):
 
-    def testEncodeWithNullString(self):
-        self.assertEqual(encode('', cipher), '', 'Null value')
+    def test_encode_with_null_string(self):
+        self.assertEqual(encode('', cipher), '', 'Null Value')
 
-    def testEncodeWithCustomMessage(self):
-        self.assertEqual(encode('helloworld', cipher), 'bTffiqilfR', 'custom message')
+    def test_encode_with_custom_message(self):
+        self.assertEqual(encode('helloworld', cipher), 'bTffiqilfR', 'Custom Message')
 
-    def testEncodeWithActualMessage(self):
-        self.assertEqual(encode(MESSAGE, cipher), 'vTnnTl zQmnTl zilTpTl', 'actual Message')
+    def test_encode_with_original_message(self):
+        self.assertEqual(encode(MESSAGE, cipher), 'vTnnTl zQmnTl zilTpTl', 'Actual Message')
 
-    def testDecodeWithCustomMessage(self):
-        self.assertEqual(decode('bTffi Kbcfcjm', cipher), 'hello Philips')
+    def test_decode_with_custom_message(self):
+        self.assertEqual(decode('bTffiqilfR', cipher), 'helloworld')
 
-    def testDecodeWithOriginalMessage(self):
-        self.assertEqual(decode(secret,cipher), MESSAGE, 'original message')
-
-    def testCipherFunctionWithNumericValue(self):
-        with self.assertRaises(AttributeError): make_cipher(0)
-
-    def testCipherFunctionWithAlphanumericValue(self):
-        with self.assertRaises(SystemExit): make_cipher('A0')
-
-    def testCipherWithCorrectValue(self):
-        result = make_cipher('QWERTY')
-        self.assertEqual('Q', result[0], 'Correct Value')
-
-    def testCipherWithDifferentValue(self):
-        result = make_cipher('PHILIPS')
-        self.assertEqual('b', result[6])
+    def test_decode_with_original_message(self):
+        self.assertEqual(decode(secret, cipher), MESSAGE, 'Original Message')
 
 if __name__ == '__main__':
     unittest.main()
