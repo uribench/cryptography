@@ -8,10 +8,10 @@ class TestDecoder(unittest.TestCase):
         self.assertEqual(decode('mjqqtBtwqi', cipher), 'helloworld', 'Custom Message Decode')
 
     def test_decode_with_caesar_cipher_and_actual_message(self):
-        MESSAGE = 'Clean Code'
+        message = 'Clean Code'
         cipher = 'fghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZabcde'
         secret = 'Hqjfs Htij'
-        self.assertEqual(decode(secret, cipher), MESSAGE, 'Actual Message Decode')
+        self.assertEqual(decode(secret, cipher), message, 'Actual Message Decode')
 
     def test_decode_with_caesar_cipher_and_salt_equal_zero(self):
         cipher = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'

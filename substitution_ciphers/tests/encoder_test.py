@@ -12,14 +12,14 @@ class TestEncoder(unittest.TestCase):
         self.assertEqual(encode('helloworld', cipher), 'mjqqtBtwqi', 'Custom Message')
 
     def test_encode_with_caesar_cipher_and_actual_message(self):
-        MESSAGE = 'Clean Code'
+        message = 'Clean Code'
         cipher = 'fghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZabcde'
-        self.assertEqual(encode(MESSAGE, cipher), 'Hqjfs Htij', 'Actual Message')
+        self.assertEqual(encode(message, cipher), 'Hqjfs Htij', 'Actual Message')
 
     def test_encode_with_deranged_alphabet_cipher_and_actual_message(self):
-        MESSAGE = 'Better Faster Forever'
+        message = 'Better Faster Forever'
         cipher = 'QWERTYabcdefghijklmnopqrstuvwxyzABCDFGHIJKLMNOPSUVXZ'
-        self.assertEqual(encode(MESSAGE, cipher), 'vTnnTl zQmnTl zilTpTl', 'Actual Message')
+        self.assertEqual(encode(message, cipher), 'vTnnTl zQmnTl zilTpTl', 'Actual Message')
 
 if __name__ == '__main__':
     unittest.main(warnings='ignore')
