@@ -4,9 +4,14 @@
 
 # Samples of Various Ciphers
 
-This repository includes a collection of code samples of various ciphers techniques, including:
+This repository includes a collection of code samples of various ciphering techniques, including:
 
 1. Substitution ciphers
 2. Book ciphers
 
-Each ciphers technique has its own dedicated folder with source code, tests, and documents.
+Each ciphering technique has its own dedicated folder with:
+
+- Source code 
+- Sample programs
+- Tests
+- Documents
