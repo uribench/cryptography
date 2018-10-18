@@ -1,6 +1,12 @@
 [![Build Status](https://travis-ci.com/uribench/cryptography.svg?branch=master)](https://travis-ci.com/uribench/cryptography)
-[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage)](https://codeclimate.com/github/codeclimate/codeclimate/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/d9573a13e796b32a6794/maintainability)](https://codeclimate.com/github/uribench/cryptography/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/d9573a13e796b32a6794/test_coverage)](https://codeclimate.com/github/uribench/cryptography/test_coverage)
 
 # Samples of Various Ciphers
 
+This repository includes a collection of code samples of various ciphers techniques, including:
+
+1. Substitution ciphers
+2. Book ciphers
+
+Each ciphers technique has its own dedicated folder with source code, tests, and documents.
