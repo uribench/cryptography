@@ -1,6 +1,6 @@
-[![Build Status](https://travis-ci.org/uribench/cryptography.svg?branch=master)](https://travis-ci.org/uribench/cryptography)
-[![Maintainability](https://api.codeclimate.com/v1/badges/60f2e373b5ca64453968/maintainability)](https://codeclimate.com/github/uribench/cryptography/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/60f2e373b5ca64453968/test_coverage)](https://codeclimate.com/github/uribench/cryptography/test_coverage)
+[![Build Status](https://travis-ci.com/uribench/cryptography.svg?branch=master)](https://travis-ci.com/uribench/cryptography)
+[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage)](https://codeclimate.com/github/codeclimate/codeclimate/test_coverage)
 
 # Samples of Various Ciphers
 
