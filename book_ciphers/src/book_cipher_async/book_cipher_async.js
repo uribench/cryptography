@@ -11,7 +11,7 @@ function decode(secret) {
 }
 
 function* gen(secret) {
-  while(secret.words.length) {
+  while (secret.words.length) {
     yield secret.words.shift()[secret.keys.splice(0, 10).reduce((a, b) => a ^ b, 0)]; 
   }
   return;
