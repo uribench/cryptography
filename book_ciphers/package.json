@@ -6,12 +6,10 @@
     "Ryland.Cai <ryland.cai@philips.com>"
   ],
   "scripts": {
-    "test": "node ./test/spec_runner.js"
+    "test": "node ./tests/spec_runner.js"
   },
   "devDependencies": {
     "jasmine": "^3.2.0"
   },
-  "dependencies": {
-    "jasmine-reporters": "^2.3.2"
-  }
+  "dependencies": {}
 }
