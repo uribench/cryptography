@@ -20,6 +20,8 @@ matrix:
       dist: trusty
       node_js:
         - "node"
+      install:
+        - yarn add jasmine
       before_script:
         - cd book_ciphers
       script:
