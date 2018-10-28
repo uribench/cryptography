@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "author": "Benchetrit, Uri",
   "contributors": [
-    "Ryland.Cai <ryland.cai@philips.com>"
+    "Ryland.Cai <niasmart@aliyun.com>"
   ],
   "scripts": {
     "test": "node ./tests/spec_runner.js"
