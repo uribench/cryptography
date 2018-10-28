@@ -1,15 +1,24 @@
-os: linux
-dist: trusty
-language: python
-python:
-  - 3.5.2
-# install dependencies
-install:
-  - pip install -r requirements.txt
-script:
-- pytest --cov-report term-missing --cov=substitution_ciphers
-- codeclimate-test-reporter --file .coverage
-addons:
-  code_climate:
-    repo_token:
-      secure: a9c84c370277a441949547075f54d1bd9335f313e35e189104909c598dfed072
+matrix:
+  include:
+    os: linux
+    dist: trusty
+    - language: python
+      python:
+        - 3.5.2
+      # install dependencies
+      install:
+        - pip install -r requirements.txt
+      script:
+        - pytest --cov-report term-missing --cov=substitution_ciphers
+        - codeclimate-test-reporter --file .coverage
+      addons:
+        code_climate:
+          repo_token:
+            secure: a9c84c370277a441949547075f54d1bd9335f313e35e189104909c598dfed072
+    - language: node_js
+      node_js:
+        - "node"
+      before_script:
+        - cd book_ciphers
+      script:
+        - node ./tests/spec_runner.js
