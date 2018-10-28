@@ -1,8 +1,11 @@
+os: linux
+dist: trusty
+
 matrix:
   include:
-    - language: python
-      os: linux
-      dist: trusty
+
+    - name: "Python Tests using pytest"
+      language: python
       python:
         - 3.5.2
       # install dependencies
@@ -15,7 +18,9 @@ matrix:
         code_climate:
           repo_token:
             secure: a9c84c370277a441949547075f54d1bd9335f313e35e189104909c598dfed072
-    - language: node_js
+
+    - name: "JavaScript Tests using jasmine"
+      language: node_js
       os: linux
       dist: trusty
       node_js:
