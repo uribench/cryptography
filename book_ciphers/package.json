@@ -1,0 +1,15 @@
+{
+  "name": "book_ciphers",
+  "version": "0.0.1",
+  "author": "Benchetrit, Uri",
+  "contributors": [
+    "Ryland.Cai <ryland.cai@philips.com>"
+  ],
+  "scripts": {
+    "test": "node ./tests/spec_runner.js"
+  },
+  "devDependencies": {
+    "jasmine": "^3.2.0"
+  },
+  "dependencies": {}
+}
