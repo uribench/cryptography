@@ -21,8 +21,6 @@ matrix:
 
     - name: "JavaScript Tests using jasmine"
       language: node_js
-      os: linux
-      dist: trusty
       node_js:
         - "node"
       install:
