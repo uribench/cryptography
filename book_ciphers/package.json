@@ -1,10 +1,11 @@
 {
   "name": "book_ciphers",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Benchetrit, Uri",
   "contributors": [
     "Ryland.Cai <niasmart@aliyun.com>"
   ],
+  "license": "Unlicense",
   "scripts": {
     "test": "node ./tests/spec_runner.js"
   },
