@@ -10,7 +10,9 @@
     "test": "node ./tests/spec_runner.js"
   },
   "devDependencies": {
-    "jasmine": "^3.2.0"
+    "jasmine": "^3.3.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "description": "Code samples for book ciphers",
+  "repository": "https://github.com/uribench/cryptography/tree/master/book_ciphers"
 }

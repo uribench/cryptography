@@ -1,6 +1,7 @@
-const { decode, secret } = require('../../src/book_cipher_async/book_cipher_async');
+const decode = require('../src/decoder_book_cipher_async');
+const secret = require('../src/secrets/secret_1');
 
-describe('book_cipher_async', function () {
+describe('decoder_book_cipher_async', function () {
   it('* secret object should be decoded successfully', () => {
     let result = 'Remove';
 
