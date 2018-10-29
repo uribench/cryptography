@@ -1,12 +1,4 @@
-function decode({ words, keys }) {
-  let value = '';
-
-  while (words.length) {
-    value += words.shift()[keys.splice(0, 10).reduce((a, b) => a ^ b)];
-  }
-
-  return value;
-}
+// Expected decoded secret is: 'Remove'
 
 const secret = {
   words: [
@@ -20,6 +12,4 @@ const secret = {
     0, 5, 4, 6, 7, 0, 6, 2, 1, 4]
 };
 
-// decode(secret);
-
-module.exports = { decode, secret };
+module.exports = secret;
