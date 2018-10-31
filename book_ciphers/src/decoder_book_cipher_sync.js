@@ -1,11 +1,15 @@
 // Sync version of the book cipher decoder
 
 function decode({ words, keys }) {
-  let value = '';
-  let splice_size = keys.length/words.length;
+  // Arrays are passed by reference. Use local clones to keep them unchanged.
+  let _words = words.slice();
+  let _keys = keys.slice();
 
-  while (words.length) {
-    value += words.shift()[keys.splice(0, splice_size).reduce((a, b) => a ^ b, 0)];
+  let value = '';
+  let splice_size = _keys.length/_words.length;
+
+  while (_words.length) {
+    value += _words.shift()[_keys.splice(0, splice_size).reduce((a, b) => a ^ b, 0)];
   }
 
   return value;
