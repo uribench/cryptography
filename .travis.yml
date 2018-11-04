@@ -36,7 +36,7 @@ matrix:
         - 3.5.2
       # install dependencies
       install:
-        - pip install pyspelling --user
+        - pip install pyspelling
       addons:
         apt:
           packages:
