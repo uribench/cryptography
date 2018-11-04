@@ -29,3 +29,15 @@ matrix:
         - cd book_ciphers
       script:
         - node ./tests/spec_runner.js
+
+    - name: "Spell Check Markdown, Python, and JavaScript files using PySpelling"
+      # install dependencies
+      install:
+        - pip install pyspelling --user
+      addons:
+        apt:
+          packages:
+          - aspell
+          - aspell-en
+      script:
+        - pyspelling
