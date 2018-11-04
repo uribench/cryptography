@@ -1,0 +1,38 @@
+matrix:
+
+- name: python
+  sources:
+  - substitution_ciphers/src/**/*.py
+  aspell:
+    lang: en
+  dictionary:
+    wordlists:
+    - substitution_ciphers/src/custom_dict_python.txt
+  pipeline:
+  - pyspelling.filters.python:
+      comments: true
+
+- name: markdown
+  sources:
+  - ./**/*.md|!./book_ciphers/node_modules/
+  aspell:
+    lang: en
+  dictionary:
+    wordlists:
+    - ./custom_dict_markdown.txt
+  pipeline:
+  - pyspelling.filters.markdown:
+
+- name: javascript
+  sources:
+  - book_ciphers/src/**/*.js
+  aspell:
+    lang: en
+  dictionary:
+    wordlists:
+    - book_ciphers/src/custom_dict_javascript.txt
+  pipeline:
+  - pyspelling.filters.javascript:
+      jsdocs: true
+      line_comments: true
+      block_comments: true

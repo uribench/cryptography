@@ -1,0 +1,86 @@
+Misspelled words:
+<markdown> ./book_ciphers/src/README.md
+--------------------------------------------------------------------------------
+Async
+Bitwise
+async
+const
+currentIndex
+currentValue
+duplications
+initialValue
+javascript
+li
+ol
+programing
+th
+ul
+--------------------------------------------------------------------------------
+
+Misspelled words:
+<markdown> ./book_ciphers/tests/README.md
+--------------------------------------------------------------------------------
+BDD
+cd
+facebook
+href
+js
+json
+npm
+workflow
+yarnpkg
+--------------------------------------------------------------------------------
+
+Misspelled words:
+<markdown> ./LICENSE.md
+--------------------------------------------------------------------------------
+MERCHANTABILITY
+NONINFRINGEMENT
+Unlicense
+href
+lt
+--------------------------------------------------------------------------------
+
+Misspelled words:
+<markdown> ./README.md
+--------------------------------------------------------------------------------
+href
+img
+li
+ol
+src
+ul
+--------------------------------------------------------------------------------
+
+Misspelled words:
+<markdown> ./substitution_ciphers/src/ciphers/README.md
+--------------------------------------------------------------------------------
+ascii
+chiper
+isalpha
+li
+lookup
+ol
+pre
+sys
+th
+--------------------------------------------------------------------------------
+
+Misspelled words:
+<markdown> ./substitution_ciphers/src/README.md
+--------------------------------------------------------------------------------
+decrypting
+li
+lookup
+ol
+--------------------------------------------------------------------------------
+
+Misspelled words:
+<markdown> ./substitution_ciphers/tests/README.md
+--------------------------------------------------------------------------------
+Pytest
+cd
+href
+pytest
+unittest
+--------------------------------------------------------------------------------
