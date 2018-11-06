@@ -14,12 +14,12 @@ The following examples for book cipher are provided:
 - book_cipher_async
 - book_cipher_sync
 
-Both are sharing the same ciphering engine. One is employing an asynchronous programing model, while
-the other is a simpler one using the synchronous programing model.
+Both are sharing the same ciphering engine. One is employing an asynchronous programming model, while
+the other is a simpler one using the synchronous programming model.
 
 ### Book Cipher Async
 
-This book cipher employs an asynchronous programing model using a common pattern with a Promise
+This book cipher employs an asynchronous programming model using a common pattern with a Promise
 function and a generator function.
 
 The generator function (specified by the `function` keyword followed by an asterisk) returns a 
@@ -27,7 +27,7 @@ Generator object that is consumed by the the inner loop of the Promise function.
 
 ### Book Cipher Sync
 
-This book cipher is using the simpler synchronous programing model with exactly the same ciphering 
+This book cipher is using the simpler synchronous programming model with exactly the same ciphering 
 engine as in the asynchronous example.
 
 ## Cipher Code Description

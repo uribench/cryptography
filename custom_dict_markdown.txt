@@ -10,11 +10,6 @@ currentValue
 duplications
 initialValue
 javascript
-li
-ol
-programing
-th
-ul
 --------------------------------------------------------------------------------
 
 Misspelled words:
@@ -23,7 +18,6 @@ Misspelled words:
 BDD
 cd
 facebook
-href
 js
 json
 npm
@@ -37,14 +31,12 @@ Misspelled words:
 MERCHANTABILITY
 NONINFRINGEMENT
 Unlicense
-href
 lt
 --------------------------------------------------------------------------------
 
 Misspelled words:
 <markdown> ./README.md
 --------------------------------------------------------------------------------
-href
 img
 li
 ol
